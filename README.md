@@ -23,6 +23,8 @@ The frontend application should be accessible at [http://localhost:3000](http://
 
 - Python
 - FastAPI
+- TypeScript
+- React
 - Redis Database
 - Redis Streams
 - Docker
