@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="jfUJ_T4D3DkNRHWijtbS" name="Page-1">
+        <mxGraphModel dx="810" dy="607" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="Inventory Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="892" y="488" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Payment Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="568" y="488" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="383" y="519" as="sourcePoint"/>
+                        <mxPoint x="545" y="518.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Order data" style="text;html=1;fillColor=#76608a;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#432D57;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="413" y="476" width="92" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="712" y="538.5" as="sourcePoint"/>
+                        <mxPoint x="874" y="538" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Decrease product quantity (Redis event)" style="text;html=1;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="718" y="554" width="141" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Payment API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="556" y="289" width="144" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="628" y="476" as="sourcePoint"/>
+                        <mxPoint x="627" y="362" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Payment&lt;br&gt;confirmation" style="text;html=1;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="524" y="407" width="92" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="873" y="500" as="sourcePoint"/>
+                        <mxPoint x="708" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Get product info" style="text;html=1;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="728" y="454" width="141" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

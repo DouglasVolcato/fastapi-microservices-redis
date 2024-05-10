@@ -1,0 +1,61 @@
+version: "2"
+services:
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+  inventory:
+    container_name: inventory
+    build:
+      context: inventory
+    image: inventory
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: "redis"
+      REDIS_PORT: "6379"
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+  payment:
+    container_name: payment
+    build:
+      context: payment
+    image: payment
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: "redis"
+      REDIS_PORT: "6379"
+      INVENTORY_SERVICE_URL: "http://inventory:80"
+    ports:
+      - "81:81"
+    networks:
+      - app-network
+
+  inventory_frontend:
+    container_name: inventory_frontend
+    build:
+      context: inventory_frontend
+    image: inventory_frontend
+    depends_on:
+      - inventory
+      - payment
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodbdata:
+

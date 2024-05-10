@@ -1,0 +1,4 @@
+fastapi>=0.111.0
+redis_om>=0.3.1
+redis>=5.0.4
+requests>=2.31.0
